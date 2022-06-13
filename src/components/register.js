@@ -28,7 +28,7 @@ const Register = () => {
     }
     const SubmitRegister = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:5000/registration', values).then(
+        axios.post('https://authentication-server-mern.herokuapp.com/registration', values).then(
             res => console.log(res.data))
 
         //console.log(values);

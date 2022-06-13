@@ -9,7 +9,7 @@ const Me = () => {
     const [data, SetData] = useState(null)
     const navigate = useNavigate()
     useEffect(() => {
-        axios.get('http://localhost:5000/me', {
+        axios.get('https://authentication-server-mern.herokuapp.com/me', {
             headers: {
                 'x-token': token
             }

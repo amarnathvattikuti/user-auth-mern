@@ -24,7 +24,7 @@ const Login = () => {
    
     const SubmitLogin =(e)=> {
      e.preventDefault()
-     axios.post('http://localhost:5000/login', values).then(
+     axios.post('https://authentication-server-mern.herokuapp.com/login', values).then(
          res => setToken(res.data.token))
     }
 
